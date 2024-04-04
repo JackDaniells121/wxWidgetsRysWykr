@@ -4,7 +4,7 @@ This repository contains project written in C++ using wxwidgets (https://www.wxw
 
 This one file cpp app has example of use:
 - drawing points, lines
-- drawing functions (x2, sin(4x) etc)
+- drawing functions (x*x, sin(4x) etc)
 - rotate transformation of point in coordinates
 - translation of coordinates
 
@@ -20,8 +20,8 @@ This one file cpp app has example of use:
 ## HOW TO RUN
 copy this reposytory:
 
-    git clone https://github.com/JackDaniells121/___repo_name___
-    cd ___repo_name___
+    git clone https://github.com/JackDaniells121/wxWidgetsRysWykr
+    cd wxWidgetsRysWykr
 
 (terminal command to generate executable):
 
