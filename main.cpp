@@ -48,7 +48,7 @@ bool MyApp::OnInit()
     wxBoxSizer* sizer = new wxBoxSizer(wxHORIZONTAL);
     frame = new wxFrame((wxFrame *)NULL, -1,  wxT("Hello wxDC"), wxPoint(50,50), wxSize(800,600));
     drawPane = new BasicDrawPane( (wxFrame*) frame);
-    drawPane->liczba = 100;
+    drawPane->liczba = 200;
     drawPane->selectedFunction = 1;
     drawPane->center_x = 200;
     drawPane->center_y = 200;
@@ -64,17 +64,17 @@ bool MyApp::OnInit()
     int ID_TEXTCTRL2 = 102;
     int ID_TEXTCTRL3 = 105;
     int ID_TEXTCTRL4 = 106;
-    this->drawPane->min_x = -50;
-    this->drawPane->max_x = 50;
+    this->drawPane->min_x = -100;
+    this->drawPane->max_x = 100;
     this->button = new wxButton(drawPane, ID_BUTTON, wxT("Save"), 
                         wxPoint(600, 20));
-    this->textctrl1 = new wxTextCtrl(drawPane, ID_TEXTCTRL1, wxT("-50"), 
+    this->textctrl1 = new wxTextCtrl(drawPane, ID_TEXTCTRL1, wxT("-100"), 
                         wxPoint(650, 60), wxSize(50, -1)); //wpisywanie wartosci x 
-    this->textctrl2 = new wxTextCtrl(drawPane, ID_TEXTCTRL2, wxT("50"), 
+    this->textctrl2 = new wxTextCtrl(drawPane, ID_TEXTCTRL2, wxT("100"), 
                         wxPoint(650, 90), wxSize(50, -1));
     this->listBox = new wxListBox(drawPane, 103, 
                             wxPoint(600, 140), wxSize(160, -1), 0, NULL, 0);
-    this->slider = new wxSlider(drawPane, ID_SLIDER, 100, 0, 200, 
+    this->slider = new wxSlider(drawPane, ID_SLIDER, 200, 0, 1000, 
                         wxPoint(600, 310), wxSize(140, -1));
     this->textctrl3 = new wxTextCtrl(drawPane, ID_TEXTCTRL3, wxT("200"), //do wpisywania wsp srodka wykrresu
                         wxPoint(650, 390), wxSize(50, -1)); 
